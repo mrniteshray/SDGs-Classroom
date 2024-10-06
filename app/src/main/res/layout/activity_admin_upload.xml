@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AdminUploadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/editTextGoalId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Goal id"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextGoalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Goal Name"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/editTextGoalDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Goal Description"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+    <Button
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Infographic Images"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewInfographics"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonUploadAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Audio"/>
+
+    <TextView
+        android:id="@+id/textViewAudioFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

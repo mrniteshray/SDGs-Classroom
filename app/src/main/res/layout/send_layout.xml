@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:background="#000000"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/sender_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sender's Name"
+        android:textColor="#FFE600"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/send_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/btn_bg"
+        android:padding="10dp"
+        android:text="Hello Bro how are you"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

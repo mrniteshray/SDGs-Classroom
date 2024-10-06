@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#000000"
+    android:orientation="vertical"
+    tools:context=".aichatbot.AiChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/questionEditText"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/sv_bg"
+            android:hint="Ask a question..."
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#211717"
+            android:padding="15dp"
+            android:text="Ask"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

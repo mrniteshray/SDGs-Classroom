@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    android:background="@color/black"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#141313"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewGoalIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/goal1" />
+
+        <!-- TextView for Title -->
+        <TextView
+            android:id="@+id/textViewGoalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#161515"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="Goal Title"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Upload_Image">
+
+    <EditText
+        android:id="@+id/goalid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="goalid"
+        android:textSize="20sp"
+        />
+    <!-- ImageView to show the uploaded image -->
+    <ImageView
+        android:id="@+id/goalImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to select an image -->
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image" />
+
+    <!-- Button to upload the image -->
+    <Button
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:layout_marginTop="16dp" />
+
+
+</LinearLayout>

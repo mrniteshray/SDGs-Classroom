@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp"
+
+    android:background="@color/white">
+
+    <LinearLayout
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Facts"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="close"
+                android:src="@drawable/baseline_cancel_24" />
+        </LinearLayout>
+
+    <TextView
+    android:id="@+id/factTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-condensed"
+    android:gravity="center"
+    android:textColor="@android:color/black"
+    android:textSize="24sp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="13dp"
+    android:layout_marginBottom="10dp" />
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
